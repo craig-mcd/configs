@@ -9,5 +9,6 @@
     "editor.fontSize": 12,
     "editor.inlayHints.enabled": "offUnlessPressed",
     "quarkus.tools.alwaysShowWelcomePage": false,
-    "editor.renderFinalNewline": false
+    "editor.renderFinalNewline": false,
+    "editor.bracketPairColorization.enabled": false
 }
