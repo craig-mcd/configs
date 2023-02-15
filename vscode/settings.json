@@ -4,7 +4,7 @@
         "editor.tabSize": 8
     },
     "workbench.startupEditor": "none",
-    "editor.fontFamily": "'Ubuntu Mono Regular', 'Droid Sans Mono', monospace",
+    "editor.fontFamily": "'Noto Sans Mono'",
     "go.toolsManagement.autoUpdate": true,
     "editor.fontSize": 12,
     "editor.inlayHints.enabled": "offUnlessPressed",
