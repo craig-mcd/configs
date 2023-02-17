@@ -64,6 +64,7 @@ set writebackup                      " make a backup before saving
 
 if has("gui_running")
     :set guioptions -=T
+    :set guifont=Noto\ Sans\ Mono\ 10
 endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
