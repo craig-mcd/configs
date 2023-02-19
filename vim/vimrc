@@ -59,14 +59,5 @@ set directory=~/tmp/vim/swap        " location of swap file
 set writebackup                      " make a backup before saving
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" GUI
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-if has("gui_running")
-    :set guioptions -=T
-    :set guifont=Noto\ Sans\ Mono\ 10
-endif
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " That's all folks!
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
