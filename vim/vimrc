@@ -24,6 +24,7 @@ set laststatus=2          " always display status line
 colorscheme molokai " Set nice colors
 syntax enable       " highlight language syntax
 set t_Co=256        " 256 support
+set termguicolors   " fixes some color themes
 set number          " line numbers
 set showcmd         " command in bottom bar
 set cursorline      " highlight line edited
