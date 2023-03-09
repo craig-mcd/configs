@@ -5,6 +5,7 @@
 colorscheme PaperColor
 set guioptions -=T
 set guifont=Noto\ Sans\ Mono\ 10
+set vb t_vb=
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " That's all folks!
