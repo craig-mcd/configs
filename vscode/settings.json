@@ -1,11 +1,7 @@
 {
     "window.titleBarStyle": "custom",
-    "[go]": {
-        "editor.tabSize": 8
-    },
     "workbench.startupEditor": "none",
     "editor.fontFamily": "'Noto Sans Mono'",
-    "go.toolsManagement.autoUpdate": true,
     "editor.fontSize": 12,
     "editor.inlayHints.enabled": "offUnlessPressed",
     "quarkus.tools.alwaysShowWelcomePage": false,
