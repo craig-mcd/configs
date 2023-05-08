@@ -16,6 +16,10 @@ set mouse+=a              " mouse support
 set foldenable            " enable folds
 set foldlevel=10          " fold levels
 set laststatus=2          " always display status line
+set foldmethod=indent     " code folding
+set foldlevel=99          " code folding
+set encoding=utf-8        " utf-8 by default
+set clipboard=unnamedplus " nicer clipboard
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Visual settings
@@ -32,6 +36,13 @@ set wildmenu        " autocomplete for a command
 set lazyredraw      " redraw when needed
 set showmatch       " highlight matching
 match Error /\s\+$/ " match spaces at the end of a line
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Key mappings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" code folding
+noremap <space> za
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Leaders
