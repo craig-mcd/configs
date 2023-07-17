@@ -5,5 +5,10 @@
     "editor.fontSize": 12,
     "editor.inlayHints.enabled": "offUnlessPressed",
     "editor.renderFinalNewline": false,
-    "editor.bracketPairColorization.enabled": false
+    "editor.bracketPairColorization.enabled": false,
+    "window.zoomLevel": 1,
+        "[go]": {
+        "editor.tabSize": 8
+    },
+    "go.toolsManagement.autoUpdate": true
 }
