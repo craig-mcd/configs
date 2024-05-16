@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Encoding=UTF-8
-Name=Eclipse IDE
-Comment=The Eclipse IDE
-Exec=/home/craig/Apps/eclipse/eclipse
-Icon=/home/craig/Apps/eclipse/icon.xpm
-Terminal=false
-Categories=Programming
