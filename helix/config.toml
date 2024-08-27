@@ -1,0 +1,24 @@
+theme = "rasmus"
+
+[editor]
+mouse = false
+cursorline = true
+completion-trigger-len = 4
+popup-border = "all"
+
+[editor.lsp]
+display-messages = true
+
+[editor.cursor-shape]
+insert = "bar"
+select = "underline"
+
+[editor.indent-guides]
+render = true
+character = "⸽"
+skip-levels = 1
+
+[keys.normal.space]
+x = ":toggle whitespace.render all none"
+H = ":toggle lsp.display-inlay-hints"
+
