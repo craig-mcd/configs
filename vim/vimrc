@@ -1,15 +1,33 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Neovim settings
+"                     Vim Settings                         "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Editor
 
-set smartindent           " TODO: not sure if needed
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                     Plugins
+
+call plug#begin()
+
+" Languages
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+Plug 'ziglang/zig.vim', { 'for': 'zig' }
+
+" Themes
+Plug 'nordtheme/vim'
+Plug 'ntk148v/komau.vim'
+Plug 'yorickpeterse/vim-paper'
+
+call plug#end()
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                     Editor
+
+set smartindent           " indentation mystery meat
 set autoindent            " nice indentation
 set tabstop=4             " number of spaces per tab
 set softtabstop=4         " spaces for tabs in editor
-set shiftwidth=4          " TODO document this
+set shiftwidth=4          " indentation mystery meat
 set expandtab             " tabs are spaces
 set mouse+=a              " mouse support
 set foldenable            " enable folds
@@ -20,13 +38,14 @@ set foldlevel=99          " code folding
 set encoding=utf-8        " utf-8 by default
 set clipboard=unnamedplus " nicer clipboard
 
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Visual settings
+"                     Visual
 
 syntax enable          " highlight language syntax
 set t_Co=256           " 256 support
 set termguicolors      " fixes some color themes
-set background=dark
+colorscheme nord       " theme
 set number             " line numbers
 set showcmd            " command in bottom bar
 set cursorline         " highlight line edited
@@ -35,19 +54,28 @@ set lazyredraw         " redraw when needed
 set showmatch          " highlight matching
 match Error /\s\+$/    " match spaces at the end of a line
 
+if has("gui_running")
+    set guioptions -=T
+    set guifont=Noto\ Sans\ Mono\ 10
+    set vb t_vb=
+endif
+
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Key mappings
+"                     Key Mappings
 
 " code folding
 noremap <space> za
 
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Leaders
+"                     Leaders
 
 let mapleader=","   " leader is a comma
 
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Searching
+"                     Searching
 
 set incsearch       " incremental search
 set hlsearch        " highlight matches
@@ -56,11 +84,11 @@ nnoremap <leader><space> :nohlsearch<CR>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Backups
+"                     Backup
 
-set backup                           " enable file backup
-set backupdir=~/tmp/nvim/backup      " set file backup location
-set backupskip=/tmp/*,/private/tmp/* " locations to ignore
-set directory=~/tmp/nvim/swap        " location of swap file
-set writebackup                      " make a backup before saving
+set backup                              " enable file backup
+set backupdir=~/tmp/vim/backup          " set file backup location
+set backupskip=/tmp/*,/private/tmp/*    " locations to ignore
+set directory=~/tmp/vim/swap            " location of swap file
+set writebackup                         " make a backup before saving
 
