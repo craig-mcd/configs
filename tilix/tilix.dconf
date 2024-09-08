@@ -1,0 +1,28 @@
+[/]
+copy-on-select=true
+paste-advanced-default=false
+prompt-on-close=true
+sidebar-on-right=false
+tab-position='left'
+terminal-title-style='none'
+use-tabs=false
+window-style='normal'
+
+[profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
+background-color='#300A24'
+badge-color='#AC7EA8'
+badge-color-set=false
+bold-color-set=false
+bold-is-bright=false
+cursor-blink-mode='system'
+cursor-colors-set=false
+cursor-shape='underline'
+font='Noto Sans Mono 11'
+foreground-color='#FFFFFF'
+highlight-colors-set=false
+login-shell=true
+palette=['#000000', '#CC0000', '#4D9A05', '#C3A000', '#3464A3', '#754F7B', '#05979A', '#D3D6CF', '#545652', '#EF2828', '#89E234', '#FBE84F', '#729ECF', '#AC7EA8', '#34E2E2', '#EDEDEB']
+terminal-bell='none'
+use-system-font=false
+use-theme-colors=true
+visible-name='Default'
