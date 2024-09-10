@@ -1,0 +1,41 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+what_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+
+# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
+then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
+
+# Zig
+if [ -d $HOME/Apps/zig ]
+then
+    PATH="$PATH:$HOME/Apps/zig"
+fi
+
+# Go
+if [ -d $HOME/Apps/go ]
+then
+    PATH="$PATH:$HOME/Apps/go/bin:$HOME/go/bin"
+fi
+
+# Aliases
+alias vi=vim
+alias o=xdg-open
+
+export EDITOR=vim
+export PS1='\w $(what_branch)\n > '
+export PATH
+export VISUAL=vim
+
+unset rc
+
+. "$HOME/.cargo/env"
