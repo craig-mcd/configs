@@ -5,26 +5,35 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+face() {
+    if [[ $? -eq 0 ]]
+    then
+        echo '⊂◉‿◉つ'
+    else
+        echo 'ಠ_ಠ'
+    fi
+}
+
 what_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
 # User specific environment
-if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
+if [[ -d "$HOME/.local/bin" ]]
 then
-    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
-fi
-
-# Zig
-if [ -d $HOME/Apps/zig ]
-then
-    PATH="$PATH:$HOME/Apps/zig"
+    PATH=$HOME/.local/bin:$PATH
 fi
 
 # Go
-if [ -d $HOME/Apps/go ]
+if [[ -d $HOME/Apps/go ]]
 then
-    PATH="$PATH:$HOME/Apps/go/bin:$HOME/go/bin"
+    PATH=$PATH:$HOME/Apps/go/bin:$HOME/go/bin
+fi
+
+# Zig
+if [[ -d $HOME/Apps/zig ]]
+then
+    PATH=$PATH:$HOME/Apps/zig
 fi
 
 # Aliases
@@ -32,10 +41,10 @@ alias vi=vim
 alias o=xdg-open
 
 export EDITOR=vim
-export PS1='\w $(what_branch)\n > '
+export HISTCONTROL=ignoreboth
 export PATH
+export PS1='˹ $(face) \w $(what_branch)\n˻ > '
 export VISUAL=vim
 
-unset rc
-
 . "$HOME/.cargo/env"
+
