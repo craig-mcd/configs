@@ -84,6 +84,14 @@ nnoremap <leader><space> :nohlsearch<CR>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                     Autocommands
+
+if has("autocmd")
+    autocmd FileType c    setlocal tabstop=8 softtabstop=8 shiftwidth=8 expandtab
+    autocmd FileType make setlocal tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
+endif
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                     Backup
 
 set backup                              " enable file backup
