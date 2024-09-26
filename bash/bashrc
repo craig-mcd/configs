@@ -8,7 +8,7 @@ fi
 face() {
     if [[ $? -eq 0 ]]
     then
-        echo '⊂◉‿◉つ'
+        echo '◉‿◉'
     else
         echo 'ಠ_ಠ'
     fi
@@ -28,12 +28,6 @@ fi
 if [[ -d $HOME/Apps/go ]]
 then
     PATH=$PATH:$HOME/Apps/go/bin:$HOME/go/bin
-fi
-
-# Zig
-if [[ -d $HOME/Apps/zig ]]
-then
-    PATH=$PATH:$HOME/Apps/zig
 fi
 
 # Aliases
