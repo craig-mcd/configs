@@ -16,6 +16,7 @@ Plug 'ziglang/zig.vim', { 'for': 'zig' }
 Plug 'nordtheme/vim'
 Plug 'ntk148v/komau.vim'
 Plug 'yorickpeterse/vim-paper'
+Plug 'craig-mcd/lighttouch.vim'
 
 call plug#end()
 
@@ -37,6 +38,7 @@ set foldmethod=indent     " code folding
 set foldlevel=99          " code folding
 set encoding=utf-8        " utf-8 by default
 set clipboard=unnamedplus " nicer clipboard
+set shortmess+=I          " no intro message
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -45,7 +47,7 @@ set clipboard=unnamedplus " nicer clipboard
 syntax enable          " highlight language syntax
 set t_Co=256           " 256 support
 set termguicolors      " fixes some color themes
-colorscheme nord       " theme
+colorscheme lighttouch " theme
 set number             " line numbers
 set showcmd            " command in bottom bar
 set cursorline         " highlight line edited
