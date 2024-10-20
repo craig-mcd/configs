@@ -1,0 +1,14 @@
+{
+    "window.titleBarStyle": "custom",
+    "workbench.startupEditor": "none",
+    "editor.fontFamily": "'Noto Sans Mono'",
+    "editor.fontSize": 12,
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.renderFinalNewline": false,
+    "editor.bracketPairColorization.enabled": false,
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "Default Light Modern",
+    "zig.path": "zig",
+    "zig.zls.path": "zls",
+    "zig.initialSetupDone": true
+}
