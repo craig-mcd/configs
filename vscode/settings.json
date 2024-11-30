@@ -1,14 +1,15 @@
 {
-    "window.titleBarStyle": "custom",
-    "workbench.startupEditor": "none",
-    "editor.fontFamily": "'Noto Sans Mono'",
-    "editor.fontSize": 12,
-    "editor.inlayHints.enabled": "offUnlessPressed",
-    "editor.renderFinalNewline": false,
     "editor.bracketPairColorization.enabled": false,
+    "editor.fontFamily": "'Noto Sans Mono'",
+    "editor.fontSize": 10,
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.renderFinalNewline": "off",
+    "editor.renderWhitespace": "trailing",
+    "window.titleBarStyle": "custom",
     "window.zoomLevel": 1,
-    "workbench.colorTheme": "Default Light Modern",
+    "workbench.colorTheme": "GitHub Light",
+    "workbench.startupEditor": "none",
+    "zig.initialSetupDone": true,
     "zig.path": "zig",
-    "zig.zls.path": "zls",
-    "zig.initialSetupDone": true
+    "zig.zls.path": "zls"
 }
