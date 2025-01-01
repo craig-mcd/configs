@@ -24,13 +24,14 @@ then
     PATH=$HOME/.local/bin:$PATH
 fi
 
-# Go
-if [[ -d $HOME/Apps/go ]]
+# Zig
+if [[ -d $HOME/apps/zig ]]
 then
-    PATH=$PATH:$HOME/Apps/go/bin:$HOME/go/bin
+    PATH=$PATH:$HOME/apps/zig
 fi
 
 # Aliases
+alias v=vim
 alias vi=vim
 alias o=xdg-open
 
