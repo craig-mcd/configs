@@ -24,12 +24,6 @@ then
     PATH=$HOME/.local/bin:$PATH
 fi
 
-# Zig
-if [[ -d $HOME/apps/zig ]]
-then
-    PATH=$PATH:$HOME/apps/zig
-fi
-
 # Aliases
 alias v=vim
 alias vi=vim
