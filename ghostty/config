@@ -1,0 +1,4 @@
+font-family = Noto Sans Mono Regular
+font-size = 9
+gtk-tabs-location = hidden
+theme = zenbones_light
