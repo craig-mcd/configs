@@ -1,4 +1,5 @@
 font-family = Noto Sans Mono Regular
 font-size = 9
 gtk-tabs-location = hidden
-theme = zenbones_light
+keybind = ctrl+shift+l=toggle_tab_overview
+theme = Builtin Tango Light
