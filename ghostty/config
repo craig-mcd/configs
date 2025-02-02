@@ -3,3 +3,4 @@ font-size = 9
 gtk-tabs-location = hidden
 keybind = ctrl+shift+l=toggle_tab_overview
 theme = Builtin Tango Light
+unfocused-split-opacity = 1
