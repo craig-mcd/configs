@@ -53,6 +53,9 @@ set wildmenu           " autocomplete for a command
 set lazyredraw         " redraw when needed
 set showmatch          " highlight matching
 match Error /\s\+$/    " match spaces at the end of a line
+let &t_SI = "\<Esc>[6 q"    " Cursor insert, solid bar
+let &t_SR = "\<Esc>[4 q"    " Cursor replace, solid underscore
+let &t_EI = "\<Esc>[1 q"    " Cursor normal, flashing block
 
 if has("gui_running")
     set guioptions -=T
@@ -88,7 +91,6 @@ nnoremap <leader><space> :nohlsearch<CR>
 
 if has("autocmd")
     autocmd FileType c    setlocal tabstop=8 softtabstop=8 shiftwidth=8 expandtab
-    autocmd FileType go   setlocal tabstop=8 softtabstop=8 shiftwidth=8 expandtab
     autocmd FileType make setlocal tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
 endif
 
