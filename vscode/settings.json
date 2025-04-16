@@ -2,6 +2,8 @@
     "editor.bracketPairColorization.enabled": false,
     "editor.fontFamily": "'Noto Sans Mono'",
     "editor.fontSize": 10,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
     "editor.inlayHints.enabled": "offUnlessPressed",
     "editor.renderFinalNewline": "off",
     "editor.renderWhitespace": "trailing",
