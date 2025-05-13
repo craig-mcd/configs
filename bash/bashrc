@@ -27,13 +27,7 @@ fi
 # Go
 if [[ -d $HOME/apps/go ]]
 then
-    PATH=$PATH:$HOME/apps/go/bin:$PATH/go/bin
-fi
-
-# Zig
-if [[ -d $HOME/apps/zig ]]
-then
-    PATH=$PATH:$HOME/apps/zig
+    PATH=$PATH:$HOME/apps/go/bin:$HOME/go/bin
 fi
 
 # Aliases
