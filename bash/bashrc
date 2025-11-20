@@ -30,22 +30,16 @@ then
     PATH=$PATH:$HOME/apps/go/bin:$HOME/go/bin
 fi
 
-# Zig
-if [[ -d $HOME/apps/zig ]]
-then
-    PATH=$PATH:$HOME/apps/zig
-fi
-
 # Aliases
-alias v=vim
-alias vi=vim
+alias v=nvim
+alias vi=nvim
 alias o=xdg-open
 
-export EDITOR=vim
+export EDITOR=nvim
 export HISTCONTROL=ignoreboth
 export PATH
 export PS1='˹ $(face) \w $(what_branch)\n˻ > '
-export VISUAL=vim
+export VISUAL=nvim
 
 . "$HOME/.cargo/env"
 
