@@ -10,7 +10,6 @@ call plug#begin()
 
 " Languages
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
-Plug 'ziglang/zig.vim'
 
 " Themes
 Plug 'nordtheme/vim'
