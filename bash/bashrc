@@ -24,10 +24,10 @@ then
     PATH=$HOME/.local/bin:$PATH
 fi
 
-# Go
-if [[ -d $HOME/apps/go ]]
+# Zig
+if [[ -d $HOME/apps/zig ]]
 then
-    PATH=$PATH:$HOME/apps/go/bin:$HOME/go/bin
+    PATH=$PATH:$HOME/apps/zig
 fi
 
 # Aliases
